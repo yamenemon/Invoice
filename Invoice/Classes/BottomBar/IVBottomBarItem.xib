@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IVBottomBarItem" customModule="Invoice" customModuleProvider="target">
+            <connections>
+                <outlet property="iconContainer" destination="tLN-KG-xwl" id="ziS-zb-e2v"/>
+                <outlet property="lblTitle" destination="nGG-ML-Nrn" id="CxW-5M-LCs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGG-ML-Nrn">
+                    <rect key="frame" x="5" y="48" width="93" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLN-KG-xwl">
+                    <rect key="frame" x="39" y="19" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="62c-Ki-REw"/>
+                        <constraint firstAttribute="width" constant="25" id="phD-Vr-WkU"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nGG-ML-Nrn" secondAttribute="trailing" constant="5" id="2U2-hB-NXw"/>
+                <constraint firstItem="tLN-KG-xwl" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-11" id="4MG-Gb-gvE"/>
+                <constraint firstItem="nGG-ML-Nrn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="8KA-JY-YZ0"/>
+                <constraint firstItem="tLN-KG-xwl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="HCU-xQ-M9b"/>
+                <constraint firstItem="nGG-ML-Nrn" firstAttribute="top" secondItem="tLN-KG-xwl" secondAttribute="bottom" constant="4" id="e3l-FK-eaN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-93.478260869565219" y="5.6919642857142856"/>
+        </view>
+    </objects>
+</document>

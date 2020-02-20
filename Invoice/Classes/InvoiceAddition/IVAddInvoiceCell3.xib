@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IVAddInvoiceCell3" rowHeight="199" id="KGk-i7-Jjw" customClass="IVAddInvoiceCell3" customModule="Invoice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="198.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HlG-Zy-wmV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ms0-hE-xa4">
+                                <rect key="frame" x="20" y="10" width="150" height="84.5"/>
+                                <color key="backgroundColor" red="0.52537071700000004" green="0.65692210200000001" blue="0.90485101940000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ms0-hE-xa4" secondAttribute="height" multiplier="16:9" id="2JT-13-LtC"/>
+                                    <constraint firstAttribute="width" constant="150" id="FZU-OX-pNo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-fV-6Lh">
+                                <rect key="frame" x="215" y="37" width="85" height="30"/>
+                                <color key="backgroundColor" red="0.092470072210000004" green="0.17859837410000001" blue="0.47568470239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="3yd-vG-60j"/>
+                                    <constraint firstAttribute="height" constant="30" id="5T4-zW-rgc"/>
+                                </constraints>
+                                <state key="normal" title="Add Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnImagePickerAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aqQ-r9-tDS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0j-J5-YBB">
+                                <rect key="frame" x="200" y="114.5" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.092470072210000004" green="0.17859837410000001" blue="0.47568470239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4u8-5Q-DvS"/>
+                                    <constraint firstAttribute="height" constant="30" id="dsK-ut-6V3"/>
+                                </constraints>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSaveAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CSK-2Y-LGN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="r0j-J5-YBB" secondAttribute="bottom" constant="10" id="bIc-Ea-qAY"/>
+                            <constraint firstItem="Ms0-hE-xa4" firstAttribute="leading" secondItem="HlG-Zy-wmV" secondAttribute="leading" constant="20" id="g47-Uu-Kwc"/>
+                            <constraint firstItem="XWD-fV-6Lh" firstAttribute="centerY" secondItem="Ms0-hE-xa4" secondAttribute="centerY" id="kMu-rT-TKs"/>
+                            <constraint firstAttribute="trailing" secondItem="r0j-J5-YBB" secondAttribute="trailing" constant="20" id="lTV-YS-Mw7"/>
+                            <constraint firstItem="Ms0-hE-xa4" firstAttribute="top" secondItem="HlG-Zy-wmV" secondAttribute="top" constant="10" id="n8o-eF-oba"/>
+                            <constraint firstItem="r0j-J5-YBB" firstAttribute="top" secondItem="Ms0-hE-xa4" secondAttribute="bottom" constant="20" id="nfw-4u-ZYg"/>
+                            <constraint firstAttribute="trailing" secondItem="XWD-fV-6Lh" secondAttribute="trailing" constant="20" id="qJf-nF-7Tj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HlG-Zy-wmV" secondAttribute="bottom" priority="251" id="Eef-n9-EKN"/>
+                    <constraint firstAttribute="trailing" secondItem="HlG-Zy-wmV" secondAttribute="trailing" id="I3g-Gs-oRz"/>
+                    <constraint firstItem="HlG-Zy-wmV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lfM-aU-qHg"/>
+                    <constraint firstItem="HlG-Zy-wmV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="m5t-HK-N5T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageContainer" destination="Ms0-hE-xa4" id="lO6-kB-SM9"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="204.57589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

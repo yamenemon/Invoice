@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IVBottomBar" customModule="Invoice" customModuleProvider="target">
+            <connections>
+                <outlet property="addInvoiceItem" destination="ORc-bd-WtN" id="Isy-hJ-Fpe"/>
+                <outlet property="homeItem" destination="2SS-ua-JRl" id="FaU-rh-GU8"/>
+                <outlet property="invoiceItem" destination="4dq-BM-uk9" id="FhA-Ix-5Qg"/>
+                <outlet property="reportItem" destination="JKh-Uk-Djg" id="UQD-Iv-zlj"/>
+                <outlet property="vendorItem" destination="UtF-gh-rGT" id="6PH-H2-96L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SS-ua-JRl" customClass="IVBottomBarItem" customModule="Invoice" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="81" height="66"/>
+                    <color key="backgroundColor" red="0.076515249907970428" green="0.16900080442428589" blue="0.46768844127655029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veg-GE-Ybx">
+                    <rect key="frame" x="0.0" y="0.0" width="81" height="66"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="btnHomeActionWithSender:" destination="-1" eventType="touchUpInside" id="rL7-vQ-S6I"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dq-BM-uk9" customClass="IVBottomBarItem" customModule="Invoice" customModuleProvider="target">
+                    <rect key="frame" x="81" y="0.0" width="81" height="66"/>
+                    <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-VM-k27">
+                    <rect key="frame" x="81" y="0.0" width="81" height="66"/>
+                    <connections>
+                        <action selector="btnInvoiceActionWithSender:" destination="-1" eventType="touchUpInside" id="DxN-mm-dRL"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORc-bd-WtN" customClass="IVBottomBarItem" customModule="Invoice" customModuleProvider="target">
+                    <rect key="frame" x="162" y="0.0" width="81" height="66"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2q-up-t2A">
+                    <rect key="frame" x="162" y="0.0" width="81" height="66"/>
+                    <connections>
+                        <action selector="btnAddInvoiceActionWithSender:" destination="-1" eventType="touchUpInside" id="g6e-XI-u00"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtF-gh-rGT" customClass="IVBottomBarItem" customModule="Invoice" customModuleProvider="target">
+                    <rect key="frame" x="243" y="0.0" width="81" height="66"/>
+                    <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmY-NA-tZ0">
+                    <rect key="frame" x="243" y="0.0" width="81" height="66"/>
+                    <connections>
+                        <action selector="btnVendorActionWithSender:" destination="-1" eventType="touchUpInside" id="i4y-fN-t1p"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKh-Uk-Djg" customClass="IVBottomBarItem" customModule="Invoice" customModuleProvider="target">
+                    <rect key="frame" x="324" y="0.0" width="81" height="66"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a42-3o-S4k">
+                    <rect key="frame" x="324" y="0.0" width="81" height="66"/>
+                    <connections>
+                        <action selector="btnReportActionWithSender:" destination="-1" eventType="touchUpInside" id="LQO-l6-aWx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JKh-Uk-Djg" firstAttribute="centerY" secondItem="UtF-gh-rGT" secondAttribute="centerY" id="4eU-o7-bO9"/>
+                <constraint firstItem="veg-GE-Ybx" firstAttribute="centerX" secondItem="2SS-ua-JRl" secondAttribute="centerX" id="66k-wm-P1e"/>
+                <constraint firstItem="y2q-up-t2A" firstAttribute="centerX" secondItem="ORc-bd-WtN" secondAttribute="centerX" id="6pt-cX-0WK"/>
+                <constraint firstItem="UtF-gh-rGT" firstAttribute="leading" secondItem="ORc-bd-WtN" secondAttribute="trailing" id="7Z8-yP-iPs"/>
+                <constraint firstItem="ORc-bd-WtN" firstAttribute="height" secondItem="2SS-ua-JRl" secondAttribute="height" id="9QZ-XY-PdV"/>
+                <constraint firstItem="Wkf-VM-k27" firstAttribute="height" secondItem="4dq-BM-uk9" secondAttribute="height" id="Dcy-O9-RvE"/>
+                <constraint firstItem="JKh-Uk-Djg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="F0n-cV-9uI"/>
+                <constraint firstItem="a42-3o-S4k" firstAttribute="width" secondItem="JKh-Uk-Djg" secondAttribute="width" id="FPr-EV-mcZ"/>
+                <constraint firstItem="UtF-gh-rGT" firstAttribute="centerY" secondItem="ORc-bd-WtN" secondAttribute="centerY" id="Fv1-A9-IrS"/>
+                <constraint firstItem="a42-3o-S4k" firstAttribute="centerX" secondItem="JKh-Uk-Djg" secondAttribute="centerX" id="Fwm-4I-102"/>
+                <constraint firstItem="RmY-NA-tZ0" firstAttribute="centerX" secondItem="UtF-gh-rGT" secondAttribute="centerX" id="HOF-vC-2XG"/>
+                <constraint firstItem="ORc-bd-WtN" firstAttribute="width" secondItem="2SS-ua-JRl" secondAttribute="width" id="HWN-vr-8X7"/>
+                <constraint firstItem="a42-3o-S4k" firstAttribute="height" secondItem="JKh-Uk-Djg" secondAttribute="height" id="K2J-RQ-VGp"/>
+                <constraint firstItem="2SS-ua-JRl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K6c-i3-WUP"/>
+                <constraint firstItem="ORc-bd-WtN" firstAttribute="leading" secondItem="4dq-BM-uk9" secondAttribute="trailing" id="Kt0-bM-3az"/>
+                <constraint firstItem="4dq-BM-uk9" firstAttribute="width" secondItem="2SS-ua-JRl" secondAttribute="width" id="MCh-th-b9o"/>
+                <constraint firstItem="veg-GE-Ybx" firstAttribute="centerY" secondItem="2SS-ua-JRl" secondAttribute="centerY" id="N1E-9j-uPT"/>
+                <constraint firstItem="JKh-Uk-Djg" firstAttribute="height" secondItem="UtF-gh-rGT" secondAttribute="height" id="NXN-Xq-eAo"/>
+                <constraint firstItem="RmY-NA-tZ0" firstAttribute="height" secondItem="UtF-gh-rGT" secondAttribute="height" id="PRR-vp-vX5"/>
+                <constraint firstItem="2SS-ua-JRl" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="PyA-6P-Mad"/>
+                <constraint firstItem="JKh-Uk-Djg" firstAttribute="leading" secondItem="UtF-gh-rGT" secondAttribute="trailing" id="Qir-8J-Y0T"/>
+                <constraint firstItem="4dq-BM-uk9" firstAttribute="height" secondItem="2SS-ua-JRl" secondAttribute="height" id="Qm6-P9-5uB"/>
+                <constraint firstItem="Wkf-VM-k27" firstAttribute="width" secondItem="4dq-BM-uk9" secondAttribute="width" id="RmK-BJ-tvZ"/>
+                <constraint firstItem="2SS-ua-JRl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SKp-SN-yb7"/>
+                <constraint firstItem="y2q-up-t2A" firstAttribute="width" secondItem="ORc-bd-WtN" secondAttribute="width" id="TbQ-27-XwW"/>
+                <constraint firstItem="RmY-NA-tZ0" firstAttribute="centerY" secondItem="UtF-gh-rGT" secondAttribute="centerY" id="YJz-LF-BRc"/>
+                <constraint firstItem="veg-GE-Ybx" firstAttribute="height" secondItem="2SS-ua-JRl" secondAttribute="height" id="arf-U3-X51"/>
+                <constraint firstItem="UtF-gh-rGT" firstAttribute="height" secondItem="ORc-bd-WtN" secondAttribute="height" id="brX-0o-63h"/>
+                <constraint firstItem="y2q-up-t2A" firstAttribute="height" secondItem="ORc-bd-WtN" secondAttribute="height" id="dcB-fr-V90"/>
+                <constraint firstItem="veg-GE-Ybx" firstAttribute="width" secondItem="2SS-ua-JRl" secondAttribute="width" id="dfR-Up-ZlQ"/>
+                <constraint firstItem="Wkf-VM-k27" firstAttribute="centerX" secondItem="4dq-BM-uk9" secondAttribute="centerX" id="eIu-rE-rkT"/>
+                <constraint firstItem="UtF-gh-rGT" firstAttribute="width" secondItem="ORc-bd-WtN" secondAttribute="width" id="j7u-vp-QgU"/>
+                <constraint firstItem="Wkf-VM-k27" firstAttribute="centerY" secondItem="4dq-BM-uk9" secondAttribute="centerY" id="mMA-1W-cxr"/>
+                <constraint firstItem="4dq-BM-uk9" firstAttribute="centerY" secondItem="2SS-ua-JRl" secondAttribute="centerY" id="nGH-wE-tLv"/>
+                <constraint firstItem="y2q-up-t2A" firstAttribute="centerY" secondItem="ORc-bd-WtN" secondAttribute="centerY" id="och-5t-gao"/>
+                <constraint firstItem="ORc-bd-WtN" firstAttribute="centerY" secondItem="4dq-BM-uk9" secondAttribute="centerY" id="qlw-jH-SDh"/>
+                <constraint firstItem="RmY-NA-tZ0" firstAttribute="width" secondItem="UtF-gh-rGT" secondAttribute="width" id="rSA-NA-w1H"/>
+                <constraint firstItem="2SS-ua-JRl" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:5" id="sjb-gH-C23"/>
+                <constraint firstItem="a42-3o-S4k" firstAttribute="centerY" secondItem="JKh-Uk-Djg" secondAttribute="centerY" id="uPV-fY-aGL"/>
+                <constraint firstItem="4dq-BM-uk9" firstAttribute="leading" secondItem="2SS-ua-JRl" secondAttribute="trailing" id="zkf-hR-yzt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="125.36231884057972" y="-66.294642857142861"/>
+        </view>
+    </objects>
+</document>
